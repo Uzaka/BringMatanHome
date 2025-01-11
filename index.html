@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bring Him Home</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://restart-israel.co.il/wp-content/uploads/2024/01/%D7%9E%D7%98%D7%94-%D7%9E%D7%A9%D7%A4%D7%97%D7%95%D7%AA-%D7%94%D7%97%D7%98%D7%95%D7%A4%D7%99%D7%9D-2-1024x792.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+        }
+
+        nav {
+            background: #000000;
+            padding: 0.5rem 0;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            justify-items: center;
+            margin: 40px;
+        }
+
+        .gallery img {
+            max-width: 150px;
+            height: auto;
+            border: 6px double #b30000;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(255, 0, 0, 0.8);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1) rotate(1deg);
+            box-shadow: 0 15px 30px rgba(255, 0, 0, 1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.6);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: bold;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bring Matan Home Now!        </h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Matan</a>
+        <a href="Story.html"> Story Matan</a>
+        <a href="help.html"> Help Us</a>
+    </nav>
+
+    <section class="gallery">
+        <img src="https://cdn.discordapp.com/attachments/1326897274902544456/1326905763905536010/MATAN4.jpeg?ex=6783c3ca&is=6782724a&hm=ccf5b647b16fbb2cee68f0ffc55ce92d60251aa7ae79ea66f4c80c7014369899&" alt="Captured person 1">
+        <img src="https://cdn.discordapp.com/attachments/1326897274902544456/1326905765956419657/MATAN.jpg?ex=6783c3cb&is=6782724b&hm=ab790be9f23e0b81d7d90890a06798f2ac5b42d88bb1de829308d48d1d61c2d5&" alt="Captured person 2">
+        <img src="https://cdn.discordapp.com/attachments/1326897274902544456/1326905764211851416/MATAN5.jpeg?ex=6783c3ca&is=6782724a&hm=2cabc41563a9dc280a07fcd0f49de6f4f0eee6864473976e9053805ffb5fc8a2&" alt="Captured person 3">
+        <img src="https://cdn.discordapp.com/attachments/1326897274902544456/1326905763381117062/MATAN3.jpeg?ex=6783c3ca&is=6782724a&hm=24624792e7a434ae5ff33a0b0a621fcb4f221396e94c6966ef1f46ce30d3dc9d&" alt="Captured person 4">
+    </section>
+
+    <footer>
+        <p>Bring Matan Home</p>
+    </footer>
+    <div id="bthn" lang="en"></div><script>
+        (function () {
+           var script = document.createElement("script");
+           script.type = "text/javascript";
+           script.src = "https://bringthemhomenow.net/1.1.0/hostages-ticker.js";
+           script.setAttribute(
+             "integrity",
+             "sha384-DHuakkmS4DXvIW79Ttuqjvl95NepBRwfVGx6bmqBJVVwqsosq8hROrydHItKdsne"
+           );
+           script.setAttribute("crossorigin", "anonymous");
+           document.getElementsByTagName("head")[0].appendChild(script);
+         })();
+        </script>
+</body>
+</html>

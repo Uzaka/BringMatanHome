@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Matan</title>
+    <style>
+        /* General styling */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: #111111;
+            color: #f1c40f;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 30px;
+            background: #222222;
+            border-radius: 15px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            color: #f1c40f;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-bottom: 30px;
+            letter-spacing: 3px;
+            text-shadow: 0 0 10px #f1c40f, 0 0 20px #f39c12;
+            animation: glowText 2s infinite alternate;
+        }
+
+        p {
+            font-size: 1.3rem;
+            line-height: 1.8;
+            margin-bottom: 25px;
+            color: #f1f1f1;
+            font-weight: 500;
+            text-align: justify;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+        }
+
+        p:hover {
+            color: #e67e22;
+            transform: translateY(-5px);
+        }
+
+        .highlight {
+            color: #e67e22;
+            font-weight: bold;
+            text-shadow: 0 0 8px #e67e22;
+        }
+
+        .quote {
+            font-size: 1.6rem;
+            font-style: italic;
+            margin: 25px 0;
+            color: #f39c12;
+            font-weight: 600;
+            text-shadow: 0 0 10px #f39c12, 0 0 20px #f39c12;
+            animation: slideIn 1s ease-in-out;
+        }
+
+        
+        .stats:hover {
+            transform: scale(1.05);
+        }
+
+        .instagram {
+            margin-top: 35px;
+            text-align: center;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        .instagram a {
+            display: inline-block;
+            background: #e67e22;
+            padding: 15px;
+            border-radius: 50%;
+            text-decoration: none;
+            width: 80px;
+            height: 80px;
+            line-height: 80px;
+            text-align: center;
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: bounce 2s infinite;
+        }
+
+        .instagram a:hover {
+            transform: scale(1.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+        }
+
+        .instagram img {
+            width: 50px; /* Set the logo size */
+            height: 50px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #f1c40f;
+            font-size: 1.3rem;
+            text-shadow: 0 0 8px #f39c12;
+        }
+
+        footer p {
+            font-weight: bold;
+            animation: fadeInUp 2s ease-in-out;
+        }
+
+        nav {
+            background: #000000;
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            position: relative;
+            display: inline-block;
+            transition: color 0.3s ease;
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background: #f39c12;
+            bottom: 0;
+            left: 0;
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+        }
+
+        nav a:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+
+        nav a:hover {
+            color: #f39c12;
+        }
+
+        /* Keyframes for animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes glowText {
+            from {
+                text-shadow: 0 0 5px #f1c40f, 0 0 10px #f1c40f;
+            }
+            to {
+                text-shadow: 0 0 20px #f39c12, 0 0 30px #f39c12;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes bounce {
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Matan</a>
+        <a href="Story.html"> Story Matan</a>
+        <a href="help.html"> Help Us</a>
+    </nav>
+    
+    <div class="container">
+        <h1>About Matan</h1>
+        <p>
+            מתן בן <span class="highlight">22</span>, גר בקריית ביאליק.<br>
+            איש אהוב על כולם, לא שוכח תמיד לעזור, לדאוג ולשים את האחר לפניו. <br>
+            צנוע ואופטימי. רק מהעיניים אפשר לראות את הטוב החודר שיש בו.
+        </p>
+        <p>
+            ילד חכם שהרחיב פיזיקה, מתמטיקה ואנגלית <span class="highlight">5 יחידות</span>.<br>
+            ובכל זאת, תמיד נשאר מצטנע כי זה מתן.
+        </p>
+        <p class="quote">
+            "אומנם לא הכי גבוה, אבל תמיד הכי נוכח."
+        </p>
+        <p>
+            עיניים ירוקות, ילד של אמא, מצחיק, רגיש ואכפתי עם אמפתיה גבוהה.<br>
+            מתן הוא מישהו שאי אפשר שלא לאהוב.
+        </p>
+        <div class="stats">
+            תמיד שם בשביל כולם. מצחיק, חכם, ואכפתי. כזה הוא מתן.
+        </div>
+
+        <div class="instagram">
+            <a href="https://www.instagram.com/bring.matan.home.now?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" title="Visit our Instagram">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram Logo">
+            </a>
+        </div>
+    </div>
+
+    <footer>
+    </footer>
+    <div id="bthn" lang="en"></div><script>
+        (function () {
+           var script = document.createElement("script");
+           script.type = "text/javascript";
+           script.src = "https://bringthemhomenow.net/1.1.0/hostages-ticker.js";
+           script.setAttribute(
+             "integrity",
+             "sha384-DHuakkmS4DXvIW79Ttuqjvl95NepBRwfVGx6bmqBJVVwqsosq8hROrydHItKdsne"
+           );
+           script.setAttribute("crossorigin", "anonymous");
+           document.getElementsByTagName("head")[0].appendChild(script);
+         })();
+        </script>
+</body>
+</html>
